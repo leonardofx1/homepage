@@ -1,0 +1,20 @@
+.attribution { 
+    font-size: 11px;
+    color:white; 
+    background-color: hsl(240, 100%, 5%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100vw;
+    margin-top: 1rem;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    margin-left: 5px;
+    &:hover {
+        box-shadow: .1px .1px 1rem  hsl(228, 45%, 44%);
+
+    }
+}

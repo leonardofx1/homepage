@@ -109,8 +109,13 @@ a {
   font-weight: bold;
   margin-bottom: 2.5rem;
 }
-.aside .noticia__titulo, .aside .noticia__paragrafo {
+.aside .noticia__titulo {
   color: white;
+  letter-spacing: 0.1rem;
+  margin-bottom: 15px;
+}
+.aside .noticia__paragrafo {
+  color: hsl(233deg, 8%, 79%);
   letter-spacing: 0.1rem;
 }
 
@@ -166,9 +171,24 @@ a {
 
 .attribution {
   font-size: 11px;
-  text-align: center;
+  color: white;
+  background-color: hsl(240deg, 100%, 5%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100vw;
+  margin-top: 1rem;
 }
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+  margin-left: 5px;
+}
+.attribution a:hover {
+  box-shadow: 0.1px 0.1px 1rem hsl(228deg, 45%, 44%);
+}
+
+body {
+  padding: 0 15px;
 }/*# sourceMappingURL=style.css.map */

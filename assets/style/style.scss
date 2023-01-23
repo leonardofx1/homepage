@@ -3,6 +3,7 @@
 @import "__main";
 @import "__aside";
 @import "__topicos";
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@import "__footer";
+body {
+    padding: 0 15px;
+}

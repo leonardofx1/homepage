@@ -10,11 +10,15 @@
         font-weight: bold;
         margin-bottom: 2.5rem;
     }
-    .noticia__titulo, .noticia__paragrafo {
+    .noticia__titulo{
         color:white;
         letter-spacing: .1rem;
+        margin-bottom: 15px;
     }
-   
+    .noticia__paragrafo {
+     color:hsl(233, 8%, 79%);
+     letter-spacing: .1rem;
+    }
 }
 
 .noticia__corpo{
