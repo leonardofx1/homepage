@@ -9,41 +9,46 @@
   
 </head>
 <body>
-  <header>
-    
+  <header class="cabecalho">
+    <div><img src="assets/img/logo.svg" alt="logo"></div>
     <nav>
-      <ul>
-        <li>Home</li>
-        <li>New</li>
-        <li>Popular</li>
-        <li> Trending</li>
-        <li>Categories</li>
+      <ul class="cabecalho__links">
+        <li class="link__item"><a href="#">Home</a></li>
+        <li class="link__item"><a href="#">New</a></li>
+        <li class="link__item"><a href="#">Popular</a></li>
+        <li class="link__item"><a href="#">Trending</a></li>
+        <li class="link__item"><a href="#">Categories</a></li>
       </ul>
     </nav>
   </header>
-<main>
-    <h1>The Bright Future of Web 3.0?</h1>
-    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-    But is it really fulfilling its promise?</p>
-    <button>Read more</button>
-</main>
-  <aside>
-    <h2>New</h2>
-    <article>
-      <h3>Hydrogen VS Electric Cars</h3>
-      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-    </article>
-    <article>
-      <h3>The Downsides of AI Artistry</h3>
-      <p>What are the possible adverse effects of on-demand AI image generation?</p>
+<div class="grid__principal">
+  <main class="container__principal">
+      <figure><img src="assets/img/image-web-3-desktop.jpg" alt=""></figure>
+      <h1>The Bright Future of Web 3.0?</h1>
+      <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+      But is it really fulfilling its promise?</p>
+      <button>Read more</button>
+  </main>
+    <aside class="aside">
+      <h2 class="titulo__new">New</h2>
+      <article class="noticia__corpo">
+        <h3 class="noticia__titulo">Hydrogen VS Electric Cars</h3 >
+        <p class="noticia__paragrafo">Will hydrogen-fueled cars ever catch up to EVs?</p>
       </article>
-      <article>
-      <h3>Is VC Funding Drying Up?</h3>
-      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-    </article>
-  </aside>
+      <article class="noticia__corpo">
+        <h3 class="noticia__titulo">The Downsides of AI Artistry</h3>
+        <p class="noticia__paragrafo">What are the possible adverse effects of on-demand AI image generation?</p>
+        </article>
+        <article class="noticia__corpo">
+        <h3 class="noticia__titulo">Is VC Funding Drying Up?</h3>
+        <p class="noticia__paragrafo">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </article>
+    </aside>
+</div>
 <section>
     <article>
+      <div><img src="assets/img/image-retro-pcs.jpg" alt="pc-retro"></div>
+      
       <h2>01</h2>
       <p>
         Reviving Retro PCs
@@ -51,6 +56,7 @@
       </p>
     </article>
     <article>
+      <div><img src="assets/img/image-top-laptops.jpg" alt=""></div>
       <h2>02</h2>
       <p>
         Top 10 Laptops of 2022
@@ -58,6 +64,7 @@
       </p>
     </article>
     <article>
+      <div><img src="assets/img/image-gaming-growth.jpg" alt=""></div>
       <h2>03</h2>
       <p>
         The Growth of Gaming

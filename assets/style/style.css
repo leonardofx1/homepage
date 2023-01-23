@@ -1,3 +1,46 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Redefine a fonte padrão e os estilos de lista */
+html, body {
+  font-family: Arial, sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Remove estilos de link padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cabecalho {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.cabecalho__links {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+.cabecalho__links .link__item {
+  margin-right: 15px;
+  color: hsl(236deg, 13%, 42%);
+  cursor: pointer;
+}
+.cabecalho__links .link__item:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
