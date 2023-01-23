@@ -34,4 +34,7 @@
 .img__article {
     width: 80%;
     height: 150px;
+    &:hover {
+        transform: rotate(5deg);
+    }
 }

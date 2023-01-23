@@ -168,6 +168,9 @@ a {
   width: 80%;
   height: 150px;
 }
+.img__article:hover {
+  transform: rotate(5deg);
+}
 
 .attribution {
   font-size: 11px;
@@ -177,7 +180,7 @@ a {
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 100vw;
+  min-width: 100vw;
   margin-top: 1rem;
 }
 
