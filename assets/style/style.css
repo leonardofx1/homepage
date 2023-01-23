@@ -74,7 +74,7 @@ a {
   padding: 0.4rem;
 }
 .grid__principal .container__principal .evolucao__web p {
-  line-height: 1.3rem;
+  line-height: 1.8rem;
   color: hsl(236deg, 13%, 42%);
 }
 .grid__principal .container__principal .evolucao__web .btn {
@@ -126,6 +126,42 @@ a {
   height: 1px;
   background-color: hsl(233deg, 8%, 79%);
   margin-top: 3rem;
+}
+
+.topicos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+.topicos .container__article {
+  display: grid;
+  grid-template-columns: 150px 250px;
+  height: 150px;
+}
+
+.article__materia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.article__materia span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsla(236deg, 13%, 42%, 0.756);
+}
+.article__materia h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: start;
+}
+.article__materia p {
+  color: hsl(236deg, 13%, 42%);
+}
+
+.img__article {
+  width: 80%;
+  height: 150px;
 }
 
 .attribution {
