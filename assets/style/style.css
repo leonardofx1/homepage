@@ -41,6 +41,93 @@ a {
   color: hsl(5deg, 85%, 63%);
 }
 
+.grid__principal {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  grid-row: 1fr;
+  height: auto;
+  margin-bottom: 3rem;
+}
+.grid__principal .container__principal {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 200px;
+}
+.grid__principal .container__principal .img__web3 {
+  width: 98%;
+}
+.grid__principal .container__principal .titulo {
+  font-size: 3.8rem;
+  font-weight: bold;
+  text-align: start;
+  width: 95%;
+  color: hsl(240deg, 100%, 5%);
+}
+.grid__principal .container__principal .evolucao__web {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 82%;
+  padding: 0.4rem;
+}
+.grid__principal .container__principal .evolucao__web p {
+  line-height: 1.3rem;
+  color: hsl(236deg, 13%, 42%);
+}
+.grid__principal .container__principal .evolucao__web .btn {
+  max-width: 170px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  background-color: hsl(5deg, 85%, 63%);
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+}
+.grid__principal .container__principal .evolucao__web .btn:hover {
+  opacity: 90%;
+}
+.grid__principal .container__principal .container__web3 {
+  grid-row: 1/1;
+  grid-column: span 2;
+  padding-left: 0.2rem;
+}
+
+.aside {
+  grid-column: 2/2;
+  grid-row: 1/1;
+  width: 95%;
+  background-color: hsl(240deg, 100%, 5%);
+  padding: 2rem;
+}
+.aside .titulo__new {
+  color: hsl(35deg, 77%, 62%);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+.aside .noticia__titulo, .aside .noticia__paragrafo {
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+.noticia__corpo {
+  height: 33.3333333333%;
+  width: 85%;
+}
+
+.aside .noticia__corpo:nth-child(2)::after, .aside .noticia__corpo:nth-child(3)::after {
+  content: "";
+  display: block;
+  width: 98%;
+  height: 1px;
+  background-color: hsl(233deg, 8%, 79%);
+  margin-top: 3rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
