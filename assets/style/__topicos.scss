@@ -2,11 +2,16 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 150px;
+    margin-left: 15px;
+    min-height: 150px;
+    max-height: auto;
+    flex-wrap: wrap;
+
     .container__article {
         display: grid;
         grid-template-columns: 150px 250px;
         height: 150px;
+        min-width: auto;
     }
 }
 
@@ -36,5 +41,16 @@
     height: 150px;
     &:hover {
         transform: rotate(5deg);
+    }
+}
+@media screen and (max-width: 800px) {
+    .topicos {
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        .article__materia {
+           font-size: 1.3rem;
+           width: 100%;
+        }
     }
 }

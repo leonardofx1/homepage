@@ -2,6 +2,7 @@
     grid-column: 2/2;
     grid-row: 1/1;
     width: 95%;
+    min-height: auto;
     background-color: hsl(240, 100%, 5%);
     padding:2rem;
     .titulo__new{
@@ -32,4 +33,9 @@
     height: 1px;
     background-color: hsl(233, 8%, 79%);
     margin-top: 3rem;
+}
+@media  screen and (max-width:800px) {
+    .aside {
+        width: 100vw;
+    }
 }
