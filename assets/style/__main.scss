@@ -1,7 +1,7 @@
 .grid__principal{
     width: 100%;
     display:grid;
-    grid-template-columns: 1fr 500px;
+    grid-template-columns: 1fr minmax(0,500px);
     grid-row: 1fr;
     height: auto;
     margin-bottom: 3rem;
@@ -64,11 +64,11 @@
             flex-direction: column;
             margin-left: 0;
             .container__web3 {
-                width: 100vw;
+                width: 100%;
             }
         }
         .img__web3 {
-            width: 100vw;
+            width: 100%;
         }
     }
 }
