@@ -95,7 +95,7 @@ a {
 .grid__principal {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr minmax(0, 500px);
+  grid-template-columns: 1fr 1fr;
   grid-row: 1fr;
   height: auto;
   margin-bottom: 3rem;
@@ -172,6 +172,7 @@ a {
   min-height: auto;
   background-color: hsl(240deg, 100%, 5%);
   padding: 2rem;
+  margin: 0 auto;
 }
 .aside .titulo__new {
   color: hsl(35deg, 77%, 62%);
@@ -211,23 +212,29 @@ a {
 .topicos {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  margin-left: 15px;
-  min-height: 150px;
-  max-height: auto;
+  min-height: 100%;
   flex-wrap: wrap;
 }
 .topicos .container__article {
   display: grid;
-  grid-template-columns: 150px 250px;
-  height: 150px;
+  grid-template-columns: 150px calc(100% - 150px);
+  min-height: 150px;
+  max-width: 300px;
   min-width: auto;
+}
+.topicos .container__article figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .article__materia {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  widows: 100%;
 }
 .article__materia span {
   font-size: 2rem;
@@ -244,7 +251,7 @@ a {
 }
 
 .img__article {
-  width: 80%;
+  max-width: 150px;
   height: 150px;
 }
 .img__article:hover {
@@ -255,11 +262,24 @@ a {
   .topicos {
     justify-content: center;
     align-items: center;
-    height: 500px;
   }
   .topicos .article__materia {
     font-size: 1.3rem;
+    height: auto;
+    width: 95%;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topicos {
+    height: 100%;
+  }
+  .topicos .container__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    height: auto;
   }
 }
 .attribution {

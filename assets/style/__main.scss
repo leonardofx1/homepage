@@ -1,7 +1,7 @@
 .grid__principal{
     width: 100%;
     display:grid;
-    grid-template-columns: 1fr minmax(0,500px);
+    grid-template-columns: 1fr 1fr;
     grid-row: 1fr;
     height: auto;
     margin-bottom: 3rem;
