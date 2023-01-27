@@ -9,9 +9,9 @@ const removeAddClass = (el, del, ad) => {
 }
 
 const showMenuMobile = () =>{
-removeAddClass(menuMobile,'cabecalho__links', 'visible')
-removeAddClass(btnClose, 'invisible', 'close__menu')
-removeAddClass(modal, 'invisible', 'modal__close')
+   removeAddClass(menuMobile,'cabecalho__links', 'visible')
+   removeAddClass(btnClose, 'invisible', 'close__menu')
+   removeAddClass(modal, 'invisible', 'modal__close')
 }
 
 const closeMenu = () => {
@@ -19,10 +19,11 @@ const closeMenu = () => {
    removeAddClass(btnClose, 'close__mneu', 'invisible')
    removeAddClass(modal, 'modal__close', 'invisible')
 }
-
-menu.addEventListener('click', e => {
+const handleMenuClick = (e) => {
    const classElement =  e.target.classList[0]
    const classClose = ['close__menu', 'modal__close'].includes(classElement)
    classClose && closeMenu()
    classElement == 'menu__svg' && showMenuMobile() 
-})
+}
+
+menu.addEventListener('click',handleMenuClick)
