@@ -109,6 +109,7 @@ a {
 }
 .grid__principal .container__principal .img__web3 {
   width: 98%;
+  margin-left: 5px;
 }
 .grid__principal .container__principal .titulo {
   font-size: 3.8rem;
